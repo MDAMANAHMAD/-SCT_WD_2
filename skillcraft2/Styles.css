@@ -1,0 +1,100 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.stopwatch-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.time-display {
+    font-size: 48px;
+    margin-bottom: 20px;
+    background-color: #ecf0f1;
+    padding: 15px;
+    border-radius: 10px;
+    letter-spacing: 2px;
+}
+
+.controls button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.controls button:disabled {
+    cursor: not-allowed;
+    background-color: #bdc3c7;
+}
+
+#startBtn {
+    background-color: #27ae60;
+    color: white;
+}
+
+#startBtn:hover {
+    background-color: #2ecc71;
+}
+
+#pauseBtn {
+    background-color: #e74c3c;
+    color: white;
+}
+
+#pauseBtn:hover {
+    background-color: #c0392b;
+}
+
+#resetBtn {
+    background-color: #f39c12;
+    color: white;
+}
+
+#resetBtn:hover {
+    background-color: #e67e22;
+}
+
+#lapBtn {
+    background-color: #2980b9;
+    color: white;
+}
+
+#lapBtn:hover {
+    background-color: #3498db;
+}
+
+.laps {
+    margin-top: 20px;
+}
+
+.laps ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.laps ul li {
+    background-color: #ecf0f1;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    font-size: 16px;
+}
